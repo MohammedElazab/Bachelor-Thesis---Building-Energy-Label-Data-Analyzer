@@ -1,0 +1,36 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+.venv/
+venv/
+env/
+.env
+*.egg-info/
+dist/
+build/
+
+# IDE / OS
+.idea/
+.vscode/
+*.swp
+Thumbs.db
+.DS_Store
+
+# ============================================================
+# Large data files (not required to run: streamlit run app.py)
+# App needs: belda_model.pkl, shap_importance.csv,
+#            feature_importance.csv, charts/*.png
+# ============================================================
+
+# All Parquet datasets (raw, intermediate, encoded, test split)
+*.parquet
+
+# Pipeline CSV outputs (samples, unique-value exports, raw EPC)
+Data cleaning/**/*.csv
+encoding/**/*.csv
+
+# Excel aggregation output
+Data cleaning/**/*.xlsx

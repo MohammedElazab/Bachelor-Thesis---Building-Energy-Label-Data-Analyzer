@@ -1,0 +1,62 @@
+BELDA — Model Training Report
+============================================================
+Generated    : 2026-05-09 20:14:42
+Training rows: 24,253,374
+Test rows    : 244,984
+Features used: 66
+Training time: 41.4 minutes
+
+ACCURACY: 0.7193 (71.93%)
+
+CLASSIFICATION REPORT:
+              precision    recall  f1-score   support
+
+           A       0.77      0.32      0.46       922
+           B       0.83      0.67      0.74     15406
+           C       0.75      0.76      0.76     84918
+           D       0.70      0.77      0.73    102637
+           E       0.66      0.55      0.60     35036
+           F       0.67      0.47      0.55      5517
+           G       0.62      0.51      0.56       548
+
+    accuracy                           0.72    244984
+   macro avg       0.71      0.58      0.63    244984
+weighted avg       0.72      0.72      0.72    244984
+
+
+TOP 20 FEATURE IMPORTANCES:
+Rank   Feature                                       Importance
+---------------------------------------------------------------
+1      TOTAL_FLOOR_AREA                              44192.0000
+2      CONSTRUCTION_AGE_BAND                         19544.0000
+3      envelope_composite_score                      18173.0000
+4      MAINHEAT_ENERGY_EFF                           15438.0000
+5      HOT_WATER_ENERGY_EFF                          14849.0000
+6      HOT_WATER_ENV_EFF                             12434.0000
+7      ROOF_ENERGY_EFF                               11010.0000
+8      MAINHEAT_ENV_EFF                              10080.0000
+9      WALLS_ENERGY_EFF                               8502.0000
+10     ROOF_INSULATION                                8241.0000
+11     WINDOWS_ENERGY_EFF                             7756.0000
+12     PROPERTY_TYPE_Flat                             4877.0000
+13     PROPERTY_TYPE_House                            4756.0000
+14     built_form_simplified_Mid-Terrace              4359.0000
+15     WALL_INSULATION                                4143.0000
+16     MAIN_FUEL_Mains gas                            3972.0000
+17     BUILT_FORM_Semi-Detached                       3682.0000
+18     MAINHEAT_DESCRIPTION_Gas boiler                3471.0000
+19     HOTWATER_SOURCE_Main System                    3150.0000
+20     MAIN_FUEL_Electricity                          3076.0000
+
+EXCLUDED COLUMNS (data leakage prevention):
+  - CURRENT_ENERGY_RATING
+  - CURRENT_ENERGY_EFFICIENCY
+  - POTENTIAL_ENERGY_RATING
+  - POTENTIAL_ENERGY_EFFICIENCY
+  - improvement_potential
+  - co2_intensity_category
+  - ENERGY_CONSUMPTION_CURRENT
+  - ENERGY_CONSUMPTION_POTENTIAL
+  - ENVIRONMENT_IMPACT_CURRENT
+  - CO2_EMISSIONS_CURRENT
+  - CO2_EMISS_CURR_PER_FLOOR_AREA
